@@ -14,15 +14,15 @@ if (isset($_POST['myName']) && ($_POST['honeypot'] == '')) {
    
     $mail = new PHPMailer;
     $mail->isSMTP();
-    $mail->Host = 'mail.liam.crawshaw.webhostingforstudents.com';
+    $mail->Host = '';
     $mail->Port = 587;
     $mail->SMTPAuth = true;
-    $mail->Username = '_mainaccount@liam.crawshaw.webhostingforstudents.com';
-    $mail->Password = 'Comedybangbang1';
+    $mail->Username = '';
+    $mail->Password = '';
 
-    $mail->setFrom('phpmailer@liam.crawshaw.webhostingforstudents.com', 'Liam Crawshaw');
+    $mail->setFrom('');
     //Send the message to yourself, or whoever should receive contact for submissions
-    $mail->addAddress('phpmailer@liam.crawshaw.webhostingforstudents.com', 'Liam Crawshaw');
+    $mail->addAddress('');
     $mail->addReplyTo($myEmail, $myName);
     $mail->isHTML(true);
     $mail->Body = <<<EOT
